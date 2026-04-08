@@ -31,7 +31,6 @@
     {"id":{"name":"sBee","path":"sprites/sBee/sBee.yy",},},
     {"id":{"name":"sFood","path":"sprites/sFood/sFood.yy",},},
     {"id":{"name":"sHive","path":"sprites/sHive/sHive.yy",},},
-    {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

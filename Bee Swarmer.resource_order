@@ -12,6 +12,5 @@
     {"name":"sBee","order":4,"path":"sprites/sBee/sBee.yy",},
     {"name":"sFood","order":9,"path":"sprites/sFood/sFood.yy",},
     {"name":"sHive","order":6,"path":"sprites/sHive/sHive.yy",},
-    {"name":"sPlayer","order":14,"path":"sprites/sPlayer/sPlayer.yy",},
   ],
 }
