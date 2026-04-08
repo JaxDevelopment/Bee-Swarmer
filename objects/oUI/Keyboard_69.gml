@@ -1,0 +1,1 @@
+oBee.range = oBee.range + 10

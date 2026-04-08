@@ -1,0 +1,45 @@
+{
+  "$GMProject":"v1",
+  "%Name":"Bee Swarmer",
+  "AudioGroups":[
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+  ],
+  "configs":{
+    "children":[],
+    "name":"Default",
+  },
+  "defaultScriptType":0,
+  "Folders":[],
+  "ForcedPrefabProjectReferences":[],
+  "IncludedFiles":[],
+  "isEcma":false,
+  "LibraryEmitters":[],
+  "MetaData":{
+    "IDEVersion":"2024.14.4.222",
+  },
+  "name":"Bee Swarmer",
+  "resources":[
+    {"id":{"name":"oBee","path":"objects/oBee/oBee.yy",},},
+    {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
+    {"id":{"name":"oFood","path":"objects/oFood/oFood.yy",},},
+    {"id":{"name":"oFoodSpawner","path":"objects/oFoodSpawner/oFoodSpawner.yy",},},
+    {"id":{"name":"oHive","path":"objects/oHive/oHive.yy",},},
+    {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
+    {"id":{"name":"oUI_drawer","path":"objects/oUI_drawer/oUI_drawer.yy",},},
+    {"id":{"name":"oUI","path":"objects/oUI/oUI.yy",},},
+    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"sBee","path":"sprites/sBee/sBee.yy",},},
+    {"id":{"name":"sFood","path":"sprites/sFood/sFood.yy",},},
+    {"id":{"name":"sHive","path":"sprites/sHive/sHive.yy",},},
+    {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
+  ],
+  "resourceType":"GMProject",
+  "resourceVersion":"2.0",
+  "RoomOrderNodes":[
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+  ],
+  "templateType":"game",
+  "TextureGroups":[
+    {"$GMTextureGroup":"","%Name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"Default","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
+  ],
+}

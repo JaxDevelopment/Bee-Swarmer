@@ -1,0 +1,17 @@
+{
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"oBee","order":3,"path":"objects/oBee/oBee.yy",},
+    {"name":"oCamera","order":10,"path":"objects/oCamera/oCamera.yy",},
+    {"name":"oFood","order":8,"path":"objects/oFood/oFood.yy",},
+    {"name":"oFoodSpawner","order":11,"path":"objects/oFoodSpawner/oFoodSpawner.yy",},
+    {"name":"oHive","order":5,"path":"objects/oHive/oHive.yy",},
+    {"name":"oPlayer","order":2,"path":"objects/oPlayer/oPlayer.yy",},
+    {"name":"oUI_drawer","order":13,"path":"objects/oUI_drawer/oUI_drawer.yy",},
+    {"name":"oUI","order":12,"path":"objects/oUI/oUI.yy",},
+    {"name":"sBee","order":4,"path":"sprites/sBee/sBee.yy",},
+    {"name":"sFood","order":9,"path":"sprites/sFood/sFood.yy",},
+    {"name":"sHive","order":6,"path":"sprites/sHive/sHive.yy",},
+    {"name":"sPlayer","order":14,"path":"sprites/sPlayer/sPlayer.yy",},
+  ],
+}
