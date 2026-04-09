@@ -1,6 +1,9 @@
-spd = 3;
-range = 2000;
+spd = 2;
+
+hive = instance_find(oHive, 0);
+
+// how far bees can roam from hive
+wander_range = 600;
 
 target_x = x;
 target_y = y;
-update_group = irandom(2); // 0, 1, or 2

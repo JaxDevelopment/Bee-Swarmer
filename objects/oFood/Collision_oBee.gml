@@ -1,4 +1,4 @@
-score = score + 1
+
 
  if (health1 == 0)
  {

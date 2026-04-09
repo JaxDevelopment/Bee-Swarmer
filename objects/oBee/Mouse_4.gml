@@ -1,7 +1,6 @@
-oFood.Score++
-target_x = oHive.x
-target_y = oHive.y
-var spd = 5;
+target_x = mouse_x
+target_y = mouse_y
+var spd = 10;
 
 var dist = point_distance(x, y, target_x, target_y);
 
