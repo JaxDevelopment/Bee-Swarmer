@@ -1,4 +1,22 @@
 
+// get camera
+var cam = view_camera[0];
+
+// camera bounds
+var vx = camera_get_view_x(cam);
+var vy = camera_get_view_y(cam);
+var vw = camera_get_view_width(cam);
+var vh = camera_get_view_height(cam);
+
+// margin so things don’t pop in/out instantly
+var margin = 200;
+
+// check if outside view
+if (x < vx - margin || x > vx + vw + margin ||
+    y < vy - margin || y > vy + vh + margin)
+{
+    exit; // STOP running logic
+}
 // ensure hive exists
 if (!instance_exists(hive))
 {
