@@ -2,6 +2,7 @@
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
     {"name":"FONT","order":14,"path":"fonts/FONT/FONT.yy",},
+    {"name":"Draw","order":16,"path":"objects/Draw/Draw.yy",},
     {"name":"Global","order":15,"path":"objects/Global/Global.yy",},
     {"name":"oBee","order":3,"path":"objects/oBee/oBee.yy",},
     {"name":"oCamera","order":10,"path":"objects/oCamera/oCamera.yy",},

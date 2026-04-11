@@ -20,6 +20,7 @@
   "name":"Bee Swarmer",
   "resources":[
     {"id":{"name":"FONT","path":"fonts/FONT/FONT.yy",},},
+    {"id":{"name":"Draw","path":"objects/Draw/Draw.yy",},},
     {"id":{"name":"Global","path":"objects/Global/Global.yy",},},
     {"id":{"name":"oBee","path":"objects/oBee/oBee.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
