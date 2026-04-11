@@ -26,7 +26,7 @@ for (var i = 0; i < food_count; i++)
     // 40% around hive (medium range)
     else if (roll < 0.6)
     {
-        var dist = random_range(50000, 200); // IMPORTANT: minimum distance added
+        var dist = random_range(5000, 200); // IMPORTANT: minimum distance added
         var angle = random(360);
 
         fx = oHive.x + lengthdir_x(dist, angle);
