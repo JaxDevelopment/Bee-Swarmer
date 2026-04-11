@@ -1,44 +1,24 @@
-var food_count = 1000
 
-// safety
-if (!instance_exists(oHive)) exit;
+// how far apart spawn zones are
+var spacing = 300;
 
-// camera viewport (ONLY for guarantee, not distribution)
-var cam = view_camera[0];
-var vx = camera_get_view_x(cam);
-var vy = camera_get_view_y(cam);
-var vw = camera_get_view_width(cam);
-var vh = camera_get_view_height(cam);
-
-for (var i = 0; i < food_count; i++)
+// loop across the entire room
+for (var xx = 0; xx < room_width; xx += spacing)
 {
-    var fx, fy;
-
-    var roll = random(1);
-
-    // 20% guaranteed visible at start
-    if (roll < 0.2)
+    for (var yy = 0; yy < room_height; yy += spacing)
     {
-        fx = random_range(vx, vx + vw);
-        fy = random_range(vy, vy + vh);
+        // random position inside each grid cell
+        var fx = xx + random(spacing);
+        var fy = yy + random(spacing);
+
+        // make sure it's inside the room bounds
+        fx = clamp(fx, 0, room_width);
+        fy = clamp(fy, 0, room_height);
+
+        // chance to spawn (prevents overpopulation)
+        if (random(1) < 0.8)
+        {
+            instance_create_layer(fx, fy, "Instances", oFood);
+        }
     }
-
-    // 40% around hive (medium range)
-    else if (roll < 0.6)
-    {
-        var dist = random_range(5000, 200); // IMPORTANT: minimum distance added
-        var angle = random(360);
-
-        fx = oHive.x + lengthdir_x(dist, angle);
-        fy = oHive.y + lengthdir_y(dist, angle);
-    }
-
-    // 40% anywhere in the world
-    else
-    {
-        fx = random(room_width);
-        fy = random(room_height);
-    }
-
-    instance_create_layer(fx, fy, "Instances", oFood);
 }

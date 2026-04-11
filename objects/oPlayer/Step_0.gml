@@ -1,5 +1,5 @@
-var mx = keyboard_check(vk_right) - keyboard_check(vk_left);
-var my = keyboard_check(vk_down) - keyboard_check(vk_up);
+var mx = keyboard_check(ord("D")) - keyboard_check(ord("A"));
+var my = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
 
 
