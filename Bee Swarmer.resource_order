@@ -5,7 +5,7 @@
     {"name":"Draw","order":16,"path":"objects/Draw/Draw.yy",},
     {"name":"Global","order":15,"path":"objects/Global/Global.yy",},
     {"name":"oBee","order":3,"path":"objects/oBee/oBee.yy",},
-    {"name":"oCamera","order":10,"path":"objects/oCamera/oCamera.yy",},
+    {"name":"oCamera","order":19,"path":"objects/oCamera/oCamera.yy",},
     {"name":"oFood","order":8,"path":"objects/oFood/oFood.yy",},
     {"name":"oFoodSpawner","order":11,"path":"objects/oFoodSpawner/oFoodSpawner.yy",},
     {"name":"oHive","order":5,"path":"objects/oHive/oHive.yy",},

@@ -1,6 +1,7 @@
 randomize();
+
 // total food in the world
-var food_count = 3000; // start small
+var food_count = 1000; // start small
 
 for (var i = 0; i < food_count; i++)
 {

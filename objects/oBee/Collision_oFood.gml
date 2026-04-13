@@ -1,4 +1,4 @@
-oFood.Score++
+
 target_x = oHive.x
 target_y = oHive.y
 var spd = 5;

@@ -1,20 +1,24 @@
-
-// target = player center
-var tx = oPlayer.x;
-var ty = oPlayer.y;
-
 // get camera
 var cam = view_camera[0];
 
-// current camera position
+// camera size
+var vw = camera_get_view_width(cam);
+var vh = camera_get_view_height(cam);
+
+// target (center on player)
+var target_x = oPlayer.x - vw * 0.5;
+var target_y = oPlayer.y - vh * 0.5;
+
+// current position
 var cx = camera_get_view_x(cam);
 var cy = camera_get_view_y(cam);
 
-// smooth follow (IMPORTANT PART)
-var follow_speed = 0.15;
+// --- SMOOTH FOLLOW WITH NATURAL SLOWDOWN ---
+var smooth = 0.12;
 
-cx = lerp(cx, tx - camera_get_view_width(cam) * 0.5, follow_speed);
-cy = lerp(cy, ty - camera_get_view_height(cam) * 0.5, follow_speed);
+// move toward target (this naturally slows near destination)
+cx += (target_x - cx) * smooth;
+cy += (target_y - cy) * smooth;
 
 // apply
 camera_set_view_pos(cam, cx, cy);

@@ -1,8 +1,8 @@
 
-if (oFood.Score == Needed) or (oFood.Score > Needed)
+if (oHive.Score == Needed) or (oHive.Score > Needed)
 {
 	instance_create_layer(oHive.x,oHive.y,"Instances",oBee)
-	oFood.Score = oFood.Score - Needed
+	oHive.Score = oHive.Score - Needed
 	Needed++
 	
 	

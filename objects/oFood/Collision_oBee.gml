@@ -1,7 +1,3 @@
 
-
- if (health1 == 0)
- {
-	 instance_destroy()
- }
-  health1 = health1 - 1
+oHive.Score++
+health1 = health1 - 1
