@@ -81,7 +81,25 @@ with (oBee)
         }
     }
 }
+// --- FIND FOOD IF NONE ---
+if (!instance_exists(target_food))
+{
+    target_food = noone;
 
+    // find nearest food in range
+    var nearest = instance_nearest(x, y, oFood);
+
+    if (nearest != noone)
+    {
+        var dx = nearest.x - x;
+        var dy = nearest.y - y;
+
+        if (dx*dx + dy*dy < food_range * food_range)
+        {
+            target_food = nearest;
+        }
+    }
+}
 // --- APPLY SWARM ---
 if (count > 0)
 {
@@ -112,8 +130,10 @@ y += lengthdir_y(spd, direction);
 
 // --- SMOOTH ROTATION ---
 image_angle = lerp(image_angle, direction, 0.2);
-if (oHive.Score == 0)
+if (oHive.Score == 0 or oHive.Score < 0 )
 {
 	dead = 1
+	oHive.Score =  0
 	instance_destroy()
+	
 }
